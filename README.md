@@ -19,7 +19,8 @@ Find the column collation across all tables with this piece of SQL logic.
 Do you have this error? Implicit conversion of varchar value to varchar cannot be performed because the collation of the value is unresolved due to a collation conflict between "Latin1_General_CI_AS" and "SQL_Latin1_General_CP1_CI_AS" in add operator. [SQLSTATE 42000] (Error 457).
 You may find a collation issue with some of your queries particularly whenever joins are involved. You can solve this problem by simply adjusting your query to include the suffice COLLATION 'MyServerCollation', but this will of course only affect that current query. The question remains; how many other columns have different collations across how many tables? What are those columns anyway?
 Use this SQL logic to get that answer.
-</p>---
+</p>
+---
 ## SQL-Logic
 ```SQL
 select
